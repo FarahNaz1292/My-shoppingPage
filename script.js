@@ -1,39 +1,39 @@
+const addedCartItems = document.getElementById("cartitems");
+const totalPrice=document.getElementById("totalItemPrice")
+const grandTotal=document.getElementById("total")
+const discountedTotal=document.getElementById("discountedTotal")
+const couponBtn=document.getElementById("coupon-btn")
+const purchaseBtn=document.getElementById("purchasebtn")
+const couponValue= document.getElementById("coupon")
 
-// Creating DOM Elements
-const items = document.querySelectorAll("#items");
-const itemsName = document.querySelectorAll(".itemName").value;
-const itemsPrice = parseInt(document.querySelectorAll(".price").value);
-const cartItems = document.getElementById("cartItems");
-//Clicking on items
-let cart=[]
-function addProduct(){
-    if(itemsName){
-        const product={name: itemsName, price: itemsPrice}
-        cart.push(product.name)
-        updateCart()
-        calculateTotal()
 
-    }
-}
-function updateCart(){
-    cartItems.innerHTML=''
-    cart.forEach((product, i) => {
-        const li= document.createElement("li")
-        li.textContent=`${product.name}`
-      cartItems.appendChild(li)
-    });
-}
-let total=0;
-function calculateTotal(){
-  total=cart.reduce((acc,product)=>acc +product.itemsPrice,0)
-  document.getElementById("total")= `${total}`
-  if(total<=200){
-    const discountedTotal=total-0.20
-  document.getElementById("discountedTotal")=`${discountedTotal}`
-  }
-
-}
-
+let total = 0;
+function addToCart(target) {
+  const cartItem = target.childNodes[3].childNodes[3].innerText;
+  const priceString = target.childNodes[3].childNodes[5].innerText.slice(1);
+  const price = parseFloat(priceString);
+  const cartList = document.createElement("li");
+  cartList.innerText = cartItem;
+  addedCartItems.appendChild(cartList);
+  total += price;
+  totalPrice.innerHTML=total
+  grandTotal.innerHTML=total
   
+  if (total>0) {
+    purchaseBtn.removeAttribute('disabled')
+  } 
+  if(total>=200){
+   couponBtn.removeAttribute('disabled')
+  }  
+}
+couponBtn.addEventListener("click",()=>{
+  const coupon=couponValue.value
+  if(coupon=="SELL200"){
+    const discountedPrice=total*0.20
+   discountedTotal.innerText=discountedPrice
+   grandTotal.innerText=total-discountedPrice
+  }
+} )
+
 
 
