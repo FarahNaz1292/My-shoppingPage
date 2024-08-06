@@ -1,37 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <!-- Required HTML Tags -->
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- Title for webpage -->
-        <title>My shopping App</title>
-        <!-- Linking CSS -->
-        <link rel="stylesheet" href="styles.css">
-        <!-- Linking Google font -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,600;1,600&display=swap"
-            rel="stylesheet">
-        <!-- Font awesome link -->
-        <script src="https://kit.fontawesome.com/83a54fa4af.js" crossorigin="anonymous"></script>
-        <!-- BootStrap -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
-            integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-            crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
-            integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
-            crossorigin="anonymous"></script>
-    </head>
+<head>
+    <!-- Required HTML Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title for webpage -->
+    <title>My shopping App</title>
+    <!-- Linking CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Linking Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,600;1,600&display=swap"
+        rel="stylesheet">
+    <!-- Font awesome link -->
+    <script src="https://kit.fontawesome.com/83a54fa4af.js" crossorigin="anonymous"></script>
+    <!-- BootStrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+</head>
 
     <body>
         <!-- Banner section starts here-->
-        <div class="d-flex align-items-center justify-content-center banner-section container-fluid">
-            <div class="w-40">
+        <div class=" container-fluid">
+            <div class="banner">
                 <div class="discount-para">
                     <h3>
                         ---SALE FEVER ---
@@ -41,21 +41,18 @@
                             <span class="discount">20% off </span>
                         </p>
                     </h1>
-                    <h5>Use promo code <span id="discount-btn">SELL200</span></h5>
+                    <h5>Use promo code <button id="discount-btn">SELL200</button></h5>
                 </div>
             </div>
-            <div class="w-40">
-                <img src="./images/Summer 1.png" class="banner-img" alt="img">
-            </div>
+            <img class="banner-img" src="./images/Summer 1.png" alt="img">
         </div>
         <!-- Banner section Ends here-->
         <!-- Product render section starts here-->
-        <div class="d-flex justify-content-center container main-section">
+        <div id="lower-section container text-center d-flex">
             <div class="container">
                 <div class="row">
-                    <h1 class="productHeading">Kitchenware</h1>
                     <div class="col">
-                        <div class="card" style="width: 18rem;" onclick="addToCart(this)">
+                        <div class="card">
                             <img src="./images/prod1.png" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <p class="card-text">
@@ -65,14 +62,14 @@
                                     <i class="fa-regular fa-star"></i>
                                     <i class="fa-regular fa-star"></i>
                                 </p>
-                                <p class="productTitle" id="productName">K.Accessories</p>
-                                <p id="productPrice">$39.00</p>
+                                <p id="productName">K.Accessories</p>
+                                <p>$39.00</p>
                             </div>
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card" style="width: 18rem;" onclick="addToCart(this)">
-                            <img src="./images/prod2.png" class="card-img-top" alt="...">
+                        <div class="card">
+                            <img src="./images/prod1.png" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <p class="card-text">
                                     <i class="fa-regular fa-star"></i>
@@ -81,14 +78,14 @@
                                     <i class="fa-regular fa-star"></i>
                                     <i class="fa-regular fa-star"></i>
                                 </p>
-                                <p id="productName">Wooden Kitchenware</p>
-                                <p id="productPrice">$25.00</p>
+                                <p id="productName">K.Accessories</p>
+                                <p>$39.00</p>
                             </div>
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card" style="width: 18rem; " onclick="addToCart(this)">
-                            <img src="./images/prod3.png" class="card-img-top" alt="...">
+                        <div class="card">
+                            <img src="./images/prod1.png" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <p class="card-text">
                                     <i class="fa-regular fa-star"></i>
@@ -97,112 +94,8 @@
                                     <i class="fa-regular fa-star"></i>
                                     <i class="fa-regular fa-star"></i>
                                 </p>
-                                <p id="productName">Home Cooker</p>
-                                <p id="productPrice">$49.00</p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="row">
-                    <h1 class="productHeading">Sportsware</h1>
-                    <div class="col">
-                        <div class="card" style="width: 18rem;" onclick="addToCart(this)">
-                            <img src="./images/prod4.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <p class="card-text">
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                </p>
-                                <p id="productName">Sports black cap</p>
-                                <p id="productPrice">$49.00</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card" style="width: 18rem;" onclick="addToCart(this)">
-                            <img src="./images/prod5.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <p class="card-text">
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                </p>
-                                <p id="productName">Full Jersey Set</p>
-                                <p id="productPrice">$69.00</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card" style="width: 18rem;" onclick="addToCart(this)">
-                            <img src="./images/prod6.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <p class="card-text">
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                </p>
-                                <p id="productName">Sports cates</p>
-                                <p id="productPrice">$159.00</p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="row">
-                    <h1 class="productHeading">Furniture</h1>
-                    <div class="col">
-                        <div class="card" style="width: 18rem;" onclick="addToCart(this)">
-                            <img src="./images/prod7.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <p class="card-text">
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                </p>
-                                <p id="productName">Single Relax Chair</p>
-                                <p id="productPrice">$185.00</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card" style="width: 18rem;" onclick="addToCart(this)">
-                            <img src="./images/prod8.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <p class="card-text">
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                </p>
-                                <p id="productName">Children play</p>
-                                <p id="productPrice">$299.00</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card" style="width: 18rem;" onclick="addToCart(this)">
-                            <img src="./images/prod9.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <p class="card-text">
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                </p>
-                                <p id="productName">Flexible Sofa</p>
-                                <p id="productPrice">$339.00</p>
+                                <p id="productName">K.Accessories</p>
+                                <p>$39.00</p>
                             </div>
                         </div>
                     </div>
@@ -211,54 +104,31 @@
             </div>
             <!-- Product render section ends here-->
             <!-- coupon section starts here-->
+
             <div>
                 <section class="coupon-section">
-                    <h3 class="coupon-heading">Have coupon?</h3>
+                    <h3>Have a coupon?</h3>
                     <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Coupon Code" id="coupon"
+                        <input type="input" class="couponCode" class="form-control" placeholder="Coupon Code"
                             aria-label="Recipient's username" aria-describedby="button-addon2">
-                        <button type="button" id="coupon-btn" disabled class="btn btn-secondary">Apply</button>
+                        <button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
                     </div>
+                    <!-- coupon section ends here-->
                 </section>
-                <!-- coupon section ends here-->
                 <!-- Cart section starts here -->
                 <section class="cart">
-                    <div>
-                        <ol id="cartitems"></ol>
-                        <hr>
-                        <h4>Total Price: <span id="totalItemPrice"> </span></h4>
-                        <h4>DiscountTotal: <span id="discountedTotal"> </span></h4>
-                        <h4>Total: <span id="total"> </span></h4>
-                    </div>
-                    <div>
-                        <button id="purchasebtn" type="button" class=" btn btn-secondary " data-bs-toggle="modal"
-                            data-bs-target="#exampleModal" disabled>Make Purchase
-                        </button>
-                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                            aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-centered">
-                                <div class="modal-content d-flex justify-content-center p-2 px-2">
-                                    <div class="modal-body">
-                                        <img src="./images/congo.png" alt="...">
-                                        <h1 styles="fs-1, fw-bold">Congratulations</h1>
-                                        <p styles="fs-3 fw-medium">Your Purchase is complete</p>
+                    <ul id="cartitems"></ul>
+                    <h4 id="total">Total Price:</h4>
+                    <h4 id="discountedTotal">DiscountTotal:</h4>
 
-                                    </div>
-                                    <div class="modal-footer d-flex ">
-                                        <button type="button" class="btn close-btn" data-bs-dismiss="modal"
-                                            style="border-radius: 5px;  background-color: rgba(229, 39, 178, 1);">HOME</button>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
+                    <button id="purchasebtn">Make Purchase</button>
                     <!-- Cart section ends here -->
                 </section>
             </div>
+
+
         </div>
+        <script src="script.js"></script>
     </body>
 
 </html>
