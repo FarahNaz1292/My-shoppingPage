@@ -1,134 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <!-- Required HTML Tags -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Title for webpage -->
-    <title>My shopping App</title>
-    <!-- Linking CSS -->
-    <link rel="stylesheet" href="styles.css">
-    <!-- Linking Google font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,600;1,600&display=swap"
-        rel="stylesheet">
-    <!-- Font awesome link -->
-    <script src="https://kit.fontawesome.com/83a54fa4af.js" crossorigin="anonymous"></script>
-    <!-- BootStrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
-        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
-        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
-        crossorigin="anonymous"></script>
-</head>
+    <head>
+        <!-- Required Head Tags -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Title of the page -->
+        <title>Summer Sale</title>
+        <!-- favicon -->
+        <link rel="shortcut icon" href="./images/Summer 1.png" type="image/x-icon">
+        <!-- Bootstrap CDN link -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <!-- Font awesome Link -->
+        <script src="https://kit.fontawesome.com/83a54fa4af.js" crossorigin="anonymous"></script>
+
+    </head>
 
     <body>
-        <!-- Banner section starts here-->
-        <div class=" container-fluid">
-            <div class="banner">
-                <div class="discount-para">
-                    <h3>
-                        ---SALE FEVER ---
-                    </h3>
-                    <h1>
-                        <p> Purchase $ 200 or <br /> above & get
-                            <span class="discount">20% off </span>
-                        </p>
-                    </h1>
-                    <h5>Use promo code <button id="discount-btn">SELL200</button></h5>
-                </div>
+        <!-- Header section begins here -->
+        <div class=" container-fluid d-flex py-4 align-items-center justify-content-center gap-3"
+            style="background-color: #F9F6E2; height: 500px;">
+            <div class="lh-1">
+                <h2>---SALE FEVER---</h2>
+                <h1 class="fw-bold">Purchase $200 or <br>above & get <span style="color:#E527B2;">20% off</span></h1>
+                <h4 class="py-2">Use Promo Code <span class="fw-medium text-white rounded-2 py-2 px-2"
+                        style="background-color:#E527B2;">SELL200</span></h4>
             </div>
-            <img class="banner-img" src="./images/Summer 1.png" alt="img">
-        </div>
-        <!-- Banner section Ends here-->
-        <!-- Product render section starts here-->
-        <div id="lower-section container text-center d-flex">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <div class="card">
-                            <img src="./images/prod1.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <p class="card-text">
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                </p>
-                                <p id="productName">K.Accessories</p>
-                                <p>$39.00</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <img src="./images/prod1.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <p class="card-text">
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                </p>
-                                <p id="productName">K.Accessories</p>
-                                <p>$39.00</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <img src="./images/prod1.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <p class="card-text">
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                </p>
-                                <p id="productName">K.Accessories</p>
-                                <p>$39.00</p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <!-- Product render section ends here-->
-            <!-- coupon section starts here-->
-
             <div>
-                <section class="coupon-section">
-                    <h3>Have a coupon?</h3>
-                    <div class="input-group mb-3">
-                        <input type="input" class="couponCode" class="form-control" placeholder="Coupon Code"
-                            aria-label="Recipient's username" aria-describedby="button-addon2">
-                        <button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
-                    </div>
-                    <!-- coupon section ends here-->
-                </section>
-                <!-- Cart section starts here -->
-                <section class="cart">
-                    <ul id="cartitems"></ul>
-                    <h4 id="total">Total Price:</h4>
-                    <h4 id="discountedTotal">DiscountTotal:</h4>
-
-                    <button id="purchasebtn">Make Purchase</button>
-                    <!-- Cart section ends here -->
-                </section>
+                <img src="./images/Summer 1.png" alt="Summer sale" style="width: 560px; height: 400px;">
             </div>
+        </div>
+        <!-- Header section ends here -->
+        <!-- Main section begins here -->
+        <div class="d-flex container gap-4 ">
+            <div>
+                <div class="container text-center ">
+                    <h1 class="fw-bold text-start py-3 my-3">Kitchenware</h1>
+                    <div class="row">
+                        <div class="col">
+                            <div class="card border border-3 cartitems" style="width: 300px;" onclick="addToCart(this)">
+                                <div class="card-body">
+                                    <img src="./images/prod1.png" class="card-img-top p-3 mb-2 bg-body-secondary border"
+                                        alt="..." style="height: 255px;">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <h5 class="card-title fw-medium" id="product-name">k.Accessories</h5>
+                                    <p class="fw-bold" id="product-price">$39.00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card border border-3" style="width: 300px;" onclick="addToCart(this)">
+                                <div class="card-body">
+                                    <img src="./images/prod2.png" class="card-img-top p-3 mb-2 bg-body-secondary border"
+                                        alt="...">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <h5 class="card-title fw-medium" id="product-name">Wooden Kitchenware</h5>
+                                    <p class="fw-bold" id="product-price">$25.00</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col">
+                            <div class="card border border-3" style="width: 300px;" onclick="addToCart(this)">
+                                <div class="card-body">
+                                    <img src="./images/prod3.png" class="card-img-top p-3 mb-2 bg-body-secondary border"
+                                        alt="..." style="height: 255px;">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <h5 class="card-title fw-medium" id="product-name">Home cooker</h5>
+                                    <p class="fw-bold" id="product-price">$49.00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container text-center">
+                    <h1 class="fw-bold text-start py-3 my-3">Sportsware</h1>
+                    <div class="row">
+                        <div class="col">
+                            <div class="card border border-3" style="width: 300px;" onclick="addToCart(this)">
+                                <div class="card-body">
+                                    <img src="./images/prod4.png" class="card-img-top p-3 mb-2 bg-body-secondary border"
+                                        alt="..." style="height: 255px;">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <h5 class="card-title fw-medium" id="product-name">Sports Black Cap</h5>
+                                    <p class="fw-bold" id="product-price">$49.00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card border border-3" style="width: 300px;" onclick="addToCart(this)">
+                                <div class="card-body">
+                                    <img src="./images/prod5.png" class="card-img-top p-3 mb-2 bg-body-secondary border"
+                                        alt="..." style="height: 250px;">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <h5 class="card-title fw-medium" id="product-name">Full Jersy Set</h5>
+                                    <p class="fw-bold" id="product-price">$69.00</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col">
+                            <div class="card border border-3" style="width: 300px;" onclick="addToCart(this)">
+                                <div class="card-body">
+                                    <img src="./images/prod6.png" class="card-img-top p-3 mb-2 bg-body-secondary border"
+                                        alt="..." style="height: 255px;">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <h5 class="card-title fw-medium" id="product-name">Sports Cates</h5>
+                                    <p class="fw-bold" id="product-price">$159.00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container text-center my-3">
+                    <h1 class="fw-bold text-start py-3 my-3">Furniture</h1>
+                    <div class="row">
+                        <div class="col">
+                            <div class="card border border-3" style="width: 300px;" onclick="addToCart(this)">
+                                <div class="card-body">
+                                    <img src="./images/prod7.png" class="card-img-top p-3 mb-2 bg-body-secondary border"
+                                        alt="..." style="height: 255px;">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <h5 class="card-title fw-medium" id="product-name">Accent Chair</h5>
+                                    <p class="fw-bold" id="product-price">$299.00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card border border-3" style="width: 300px;" onclick="addToCart(this)">
+                                <div class="card-body">
+                                    <img src="./images/prod8.png" class="card-img-top p-3 mb-2 bg-body-secondary border"
+                                        alt="..." style="height: 255px;">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <h5 class="card-title fw-medium" id="product-name">Children Play</h5>
+                                    <p class="fw-bold" id="product-price">$200.00</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col">
+                            <div class="card border border-3" style="width: 300px;" onclick="addToCart(this)">
+                                <div class="card-body">
+                                    <img src="./images/prod9.png" class="card-img-top p-3 mb-2 bg-body-secondary border"
+                                        alt="..." style="height: 255px;">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <h5 class="card-title fw-medium" id="product-name">Home cooker</h5>
+                                    <p class="fw-bold" id="product-price">$49.00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin-top: 120px;padding:20px;" class="">
+                <!-- coupon section begins here -->
+                <h3 class="fw-bold ">Have coupon? </h3>
+                <input type="text" class="coupon  border border-secondary-subtle rounded-start-2 text-success coupon"
+                    style="height: 40px;" ;>
+                <button class="btn btn-light coupon-btn fw-medium text-white"
+                    style="height: 40px;background-color:#D5D6D9 ;" disabled>Apply</button>
+                <!-- coupon section ends here -->
+                <!-- cart begins here  -->
+                <ol></ol>
+                <hr>
+                <h3>Total price: <span id="totalItemPrice">$00.00</span></h3>
+                <h3>Discount: <span id="discountedTotal">$00.00</span></h3>
+                <h3> Total: <span id="total">$00.00</span></h3>
+                <!-- Button trigger modal -->
+                <button class="fw-bold text-white border-secondary-subtle py-1 rounded-2 "
+                    style="background-color: #D5D6D9;" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    id="purchasebtn">Make Purchase</button>
+                <!-- Modal begins here-->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content d-flex align-items-center justify-content-center">
+                            <div class="modal-header">
+                                <img src="./images/congo.png" alt="congo">
+
+                            </div>
+                            <div class="modal-body">
+                                <h1 class="modal-title f-2 fw-bold" id="exampleModalLabel">Congratulations</h1>
+                                <p class="text-center h5">Your Purchase is complete</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary fw-medium" data-bs-dismiss="modal"
+                                    style="background-color:#E527B2;width: 100px;">HOME</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- cart ends here  -->
+                <div>
+
+                </div>
+            </div>
+            <!-- Main section ends here -->
 
 
         </div>
+        <!-- Script file tag -->
         <script src="script.js"></script>
+        <!-- Bootstrap Script tag  -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+            integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+            crossorigin="anonymous"></script>
     </body>
 
 </html>

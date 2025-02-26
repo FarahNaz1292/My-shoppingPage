@@ -1,3 +1,6 @@
+
+
+
 const addedCartItems = document.getElementById("cartitems");
 const totalPrice=document.getElementById("totalItemPrice")
 const grandTotal=document.getElementById("total")
@@ -9,7 +12,9 @@ const couponValue= document.getElementById("coupon")
 
 let total = 0;
 function addToCart(target) {
-  const cartItem = target.childNodes[3].childNodes[3].innerText;
+  const cartItem = target.childNodes
+  console.log(cartItem);
+  
   const priceString = target.childNodes[3].childNodes[5].innerText.slice(1);
   const price = parseFloat(priceString);
   const cartList = document.createElement("li");
@@ -28,12 +33,12 @@ function addToCart(target) {
 }
 couponBtn.addEventListener("click",()=>{
   const coupon=couponValue.value
-  if(coupon=="SELL200"){
+  if(coupon=="PROMO20"){
     const discountedPrice=total*0.20
    discountedTotal.innerText=discountedPrice
    grandTotal.innerText=total-discountedPrice
   }
-} )
+} 
 
 
 
