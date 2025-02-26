@@ -33,7 +33,7 @@ function addToCart(target) {
 }
 couponBtn.addEventListener("click",()=>{
   const coupon=couponValue.value
-  if(coupon=="PROMO20"){
+  if(coupon=="SELL200"){
     const discountedPrice=total*0.20
    discountedTotal.innerText=discountedPrice
    grandTotal.innerText=total-discountedPrice
