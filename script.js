@@ -39,6 +39,6 @@ couponBtn.addEventListener("click",()=>{
    grandTotal.innerText=total-discountedPrice
   }
 } 
-
+)
 
 
